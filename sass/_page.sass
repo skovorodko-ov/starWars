@@ -1,0 +1,205 @@
+body
+    background: no-repeat center / 100% url('../image/mainBg.png')
+    background-color: #070506
+.page
+    // background-color: #070506
+    display: flex
+    justify-content: center
+    // align-items: center
+    width: 100%
+    padding-top: 100px
+.conteiner
+    width: 1060px
+    // border: 1px solid white 
+    display: flex
+    flex-direction: column
+    margin-bottom: 100px
+    &__menu
+        display: flex
+        align-items: center
+    &__title
+        display: flex
+        flex-direction: column
+        margin-top: 78px
+    &__subtitle
+        font-family: Proxima Nova
+        font-style: normal
+        font-weight: 900
+        font-size: 40px
+        line-height: 100%
+        color: #FFFFFF
+    &__h1
+        font-family: Proxima Nova
+        font-style: normal
+        font-weight: 900
+        font-size: 64px
+        line-height: 78px
+        color: #FFFFFF
+        margin-top: 5px
+        margin-bottom: 25px
+
+    &__text
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 150%
+        color: #AFAFAF
+        width: 572px
+    &__date
+        display: flex
+        flex-direction: column
+        margin-top: 25px
+    &__btn
+        width: 268px
+        height: 65px
+        align-self: flex-start
+        margin-top: 46px
+        background: linear-gradient(90deg, #FB641A 0%, #FC3309 100%)
+        border-radius: 300px
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 16px
+        text-transform: uppercase
+        color: #FFFFFF
+        position: relative
+        cursor: pointer
+        padding-right: 25px
+        transition: all 0.5s ease 0s
+    &__btn::before
+        content: ""
+        display: inline-block
+        position: absolute
+        width: 65px
+        height: 65px
+        background-color: #FFFFFF
+        border-radius: 50%
+        left: 210px
+        top: 0px
+        box-shadow: 0 0 20px #ffffffe3
+    &__btn::after
+        content: ""
+        display: inline-block
+        position: absolute
+        z-index: 2
+        width: 40px
+        height: 40px
+        background: no-repeat url('../image/Polygon 1.svg')
+        left: 223px
+        top: 14px
+    &__btn:hover
+        box-shadow: 0 0 20px #FB641A
+        font-size: 15px
+    &__btn:active
+        box-shadow: 0 0 50px #fb1a1a
+    &__slider
+        margin-top: 60px
+.menu
+    &__logo
+        width: 135px
+        height: 40px
+        cursor: pointer
+    &__image
+    &__nav
+        margin-left: 70px
+    &__link
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 150%
+        color: #FFFFFF
+        margin-right: 15px
+    &__link:hover
+        color: #FB641A
+.date
+    &__prim
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 150%
+        color: #B02000
+        margin-bottom: 5px
+    &__day
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 150%
+        color: #FFFFFF
+.slider
+    &__subtitle
+        font-family: Roboto
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 150%
+        color: #FFFFFF
+        margin-bottom: 25px
+        display: inline-block
+    &__swiper
+.swiper-container 
+    width: 100%
+    height: 260px
+    // border: 1px solid white
+.slide
+    // border: 1px solid red
+    display: flex
+    flex-direction: column
+    // justify-content: space-between
+    width: 250px !important
+    height: 200px
+    border-radius: 10px
+    margin-right: 20px
+    background: no-repeat center / 150% url('../image/Rectangle 2.png')
+    box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.25)
+    padding: 30px 30px 30px 30px
+    &__year
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 150%
+        color: #FFFFFF
+    &__episod
+        font-family: Roboto
+        font-style: normal
+        font-weight: 900
+        font-size: 18px
+        line-height: 150%
+        color: #FFFFFF
+        margin-top: 5px
+        height: 100px
+    &__opinion
+        display: flex
+        align-items: center
+        margin-top: 35px
+    &__rating
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 13px
+        line-height: 150%
+        color: #FFFFFF
+    &__stars
+        margin-left: 12px
+.swiper-button-prev, .swiper-button-next
+    top: 90%
+    width: 40px
+.swiper-button-prev
+    background: no-repeat center url('../image/prev.png')
+    left: 0
+
+.swiper-button-prev::after
+    content: none
+.swiper-button-next
+    background: no-repeat center url('../image/next.png')
+    left: 50px
+    top: 89.5%
+.swiper-button-next::after
+    content: none
+.slide:hover
+    background: linear-gradient(0deg, rgba(64, 101, 255, 0.86), rgba(64, 101, 255, 0.86))
